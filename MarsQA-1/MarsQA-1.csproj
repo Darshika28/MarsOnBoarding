@@ -44,13 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feature\Login.cs" />
-    <Compile Include="Feature\SellerProfileStepDefinition.cs" />
+    <Compile Include="StepDefinition\EducationStepDefinition.cs" />
+    <Compile Include="StepDefinition\LanguageStepDefinition.cs" />
+    <Compile Include="StepDefinition\Login.cs" />
+    <Compile Include="StepDefinition\SellerProfileStepDefinition.cs" />
     <Compile Include="SpecflowPages\Helpers\CommonMethods.cs" />
     <Compile Include="SpecflowPages\Helpers\ConstantHelpers.cs" />
     <Compile Include="SpecflowPages\Helpers\Driver.cs" />
     <Compile Include="SpecflowPages\Helpers\ExcelLibHelper.cs" />
+    <Compile Include="SpecflowPages\Pages\Education.cs" />
     <Compile Include="SpecflowPages\Pages\Home.cs" />
+    <Compile Include="SpecflowPages\Pages\Language.cs" />
     <Compile Include="SpecflowPages\Pages\SignIn.cs" />
     <Compile Include="SpecflowPages\Utils\Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace MarsQA_1.Helpers
 {
+
     public class Driver
     {
         //Initialize the browser

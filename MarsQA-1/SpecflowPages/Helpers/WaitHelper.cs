@@ -61,7 +61,7 @@ namespace MarsQA_1.SpecflowPages.Helpers
                     var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector(value)));
                 }
-
+                    
             }
             catch (Exception ex)
             {

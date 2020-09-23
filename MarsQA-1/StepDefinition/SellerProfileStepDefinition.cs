@@ -13,10 +13,10 @@ namespace MarsQA_1.Feature
     {
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
-        private Home _Home;
+        private Profile _Home;
         public SellerProfileStepDefinition(IWebDriver driver)
         {
-            _Home = new Home(driver);
+            _Home = new Profile(driver);
         }
 
 

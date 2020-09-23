@@ -13,23 +13,39 @@ using System.Threading.Tasks;
 
 namespace MarsQA_1.SpecflowPages.Pages
 {
-    class Home : Driver
+    class Profile : Driver
     {
-        public Home(IWebDriver driver)
+        //Constructor
+        public Profile(IWebDriver driver)
         {
 
         }
 
+        //Find Availability Button
         private static IWebElement availabiltyBtn => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/span/i"));
+
+        //Select Availability from dropdown list
         private static IWebElement availability => Driver.driver.FindElement(By.XPath("//select[@name='availabiltyType']"));
+
+        //Find Hour Button
         private static IWebElement hourBtn => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div[3]/div/span/i"));
+
+        //Select Hours from dropdown list
         private static IWebElement hours => Driver.driver.FindElement(By.XPath("//select[@name='availabiltyHour']"));
+
+        //Find Earn Target Button
         private static IWebElement earnBtn => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div[4]/div/span/i"));
+
+        //Select Earn from dropdown list
         private static IWebElement earn => Driver.driver.FindElement(By.XPath("//select[@name='availabiltyTarget']"));
 
+        //Find Availability Button
         private static IWebElement profile => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/div[1]/div[2]/div/span"));
+       
+        //Function to Add Profile Details
         public void AddPerDetails()
         {
+            //Wait until get xpath
             WaitHelper.WaitExists(driver, "XPath", "//*[@id='account-profile-section']/div/section[2]/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div[2]/div/span/i", 5);
 
             //Find and Init Availability

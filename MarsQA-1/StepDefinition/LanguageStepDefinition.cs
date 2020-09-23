@@ -44,9 +44,13 @@ namespace MarsQA_1.StepDefinition
         [When(@"I click on Add button")]
         public void WhenIClickOnAddButton()
         {
+            _Language.DeleteExistsLang(2);
             _Language.AddLangDetail(2);
+            _Language.DeleteExistsLang(3);
             _Language.AddLangDetail(3);
-            _Language.AddLangDetail(4);
+         //   _Language.DeleteExistsLang(4);
+         //   _Language.AddLangDetail(4); 
+            
         }
 
         [Then(@"As a Seller I can see languages detail in my profile")]
